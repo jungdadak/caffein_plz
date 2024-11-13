@@ -1,3 +1,4 @@
+// components/ActivityLog.js
 'use client';
 import React from 'react';
 
@@ -25,31 +26,31 @@ const logs = [
 
 export default function ActivityLog() {
   return (
-    <div className="bg-white rounded-md shadow-md p-4 overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
+    <div className="bg-gray-800 rounded-md shadow-md p-6 overflow-x-auto">
+      <table className="min-w-full divide-y divide-gray-700">
+        <thead className="bg-gray-700">
           <tr>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
               시간
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
               이벤트
             </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th className="px-6 py-3 text-left text-sm font-semibold text-gray-300 uppercase tracking-wider">
               카메라
             </th>
           </tr>
         </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
+        <tbody className="bg-gray-800 divide-y divide-gray-700">
           {logs.map((log) => (
             <tr key={log.id}>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                 {log.timestamp}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                 {log.event}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-200">
                 {log.camera}
               </td>
             </tr>
