@@ -8,7 +8,7 @@ export default function AnalPage() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 p-6 flex flex-col">
       <Image
-        src="/Typo.png"
+        src="/logo.webp"
         alt="logo"
         width={400}
         height={300}
